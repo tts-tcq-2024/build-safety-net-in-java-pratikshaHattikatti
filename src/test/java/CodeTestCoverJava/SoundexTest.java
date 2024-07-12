@@ -13,6 +13,21 @@ public class SoundexTest {
 
     @Test
     public void testSingleCharacter() {
-         //assertTrue(Soundex.generateSoundex("A")=="A000");
+        assertEquals("A000", Soundex.generateSoundex("A"));
+    }
+
+    @Test
+    public void testMultipleCharacters() {
+        assertEquals("A123", Soundex.generateSoundex("AbCdEfG"));
+    }
+
+    @Test
+    public void testLowerCase() {
+        assertEquals("A123", Soundex.generateSoundex("abcdefg"));
+    }
+
+    @Test
+    public void testNonAlphabetic() {
+        assertEquals("A000", Soundex.generateSoundex("1234$%"));
     }
 }
