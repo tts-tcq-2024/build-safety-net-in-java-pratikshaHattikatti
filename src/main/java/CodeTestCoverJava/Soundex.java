@@ -11,7 +11,7 @@ public class Soundex {
 	 private static final Map<Character , Character> soundexMapping = initSoundexMapping();
 
 	    private static Map<Character , Character> initSoundexMapping() {
-	        Map<List<Character> , Character> soundexMap = new HashMap<>();
+	        Map<Character, Character> soundexMap = new HashMap<>();
 		    soundexMap.put('A','0');
 		    soundexMap.put('E','0');
 		    soundexMap.put('I','0');
