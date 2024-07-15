@@ -13,15 +13,34 @@ public class Soundex {
 
 	 private static final Map<List<Character> , Character> soundexMapping = initSoundexMapping();
 
-	    private static Map<List<Character> , Character> initSoundexMapping() {
+	    private static Map<Character , Character> initSoundexMapping() {
 	        Map<List<Character> , Character> soundexMap = new HashMap<>();
-	           soundexMap.put(Arrays.asList('A','E','I','O','U','Y','H','W'), '0');
-	           soundexMap.put(Arrays.asList('B','F','P','V'), '1');
-	           soundexMap.put(Arrays.asList('C','G','J','Q','K','S','X','Z'),'2');
-	           soundexMap.put(Arrays.asList('D','T'), '3');
-	           soundexMap.put(Arrays.asList('L'), '4');
-	           soundexMap.put(Arrays.asList('M','N'), '5');
-	           soundexMap.put(Arrays.asList('R'), '6');
+		    soundexMap.put('A','0');
+		    soundexMap.put('E','0');
+		    soundexMap.put('I','0');
+		    soundexMap.put('O','0');
+		    soundexMap.put('U','0');
+		    soundexMap.put('Y','0');
+		    soundexMap.put('H','0');
+		    soundexMap.put('W','0');
+		    soundexMap.put('B','1');
+		    soundexMap.put('F','1');
+		    soundexMap.put('P','1');
+		    soundexMap.put('V','1');
+		    soundexMap.put('C','2');
+		    soundexMap.put('G','2');
+		    soundexMap.put('J','2');
+		    soundexMap.put('Q','2');
+		    soundexMap.put('K','2');
+		    soundexMap.put('S','2');
+		    soundexMap.put('X','2');
+		    soundexMap.put('Z','2');
+		    soundexMap.put('D','3');
+		    soundexMap.put('T','3');
+		    soundexMap.put('L','4');
+		    soundexMap.put('M','5');
+		    soundexMap.put('N','5');
+		    soundexMap.put('R','6');
 	           return soundexMap;
 	    };
 
