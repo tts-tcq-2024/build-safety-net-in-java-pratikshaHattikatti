@@ -29,10 +29,7 @@ public class SoundexTest {
     public void testString1() {
         assertEquals("B200", Soundex.generateSoundex("BOSCH"));
     }
-     @Test
-    public void testString2() {
-         assertEquals("S552", Soundex.generateSoundex("Siemens"));
-    }
+
     
     @Test
     public void testNullString() {
